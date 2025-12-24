@@ -38,3 +38,5 @@ vim.diagnostic.config({
     virtual_text = true,
     underline = true,
 })
+
+vim.opt.clipboard = "unnamedplus"
