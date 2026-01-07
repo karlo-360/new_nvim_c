@@ -1,10 +1,10 @@
 return {
     'nvim-telescope/telescope.nvim', tag = 'v0.2.0',
-    dependencies = { 
+    dependencies = {
 	    'nvim-lua/plenary.nvim',
 	    'nvim-tree/nvim-web-devicons',
 	    'BurntSushi/ripgrep',
-	    { 
+	    {
             'nvim-telescope/telescope-fzf-native.nvim', build = 'make'
     	    },
     },
