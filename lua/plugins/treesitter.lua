@@ -29,6 +29,7 @@ return {
                 "xml",
                 "yaml",
                 "go",
+                "kotlin",
             },
         })
     end

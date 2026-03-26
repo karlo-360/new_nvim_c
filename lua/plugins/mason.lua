@@ -8,6 +8,7 @@ return {
             "html",
             "pyright",
             "cssls",
+            "kotlin_language_server"
         }
     },
     dependencies = {
@@ -37,6 +38,18 @@ return {
                 vim.keymap.set("n", "gs", vim.lsp.buf.signature_help, opts)
                 vim.keymap.set("n", "<leader>rr", vim.lsp.buf.rename, opts)
                 vim.keymap.set("n", "<leader>a", vim.lsp.buf.code_action, opts)
+
+                vim.lsp.config.lua_ls = {
+                    cmd = { "lua-language-server" },
+                    filetypes = { "lua" },
+                    settings = {
+                        Lua = {
+                            diagnostics = {
+                                disable = { "lowercase-global" }
+                            }
+                        }
+                    }
+                }
             end
         },
     }
