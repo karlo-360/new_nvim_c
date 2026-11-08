@@ -26,3 +26,7 @@ vim.keymap.set("x", "<leader>p", "\"_dP")
 
 vim.keymap.set("n", "gk", "gt")
 vim.keymap.set("n", "gj", "gT")
+
+vim.keymap.set("n", "<leader>f", function()
+    vim.lsp.buf.format({ async = true })
+end, { desc = "Formatear buffer" })

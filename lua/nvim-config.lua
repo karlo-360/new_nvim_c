@@ -40,3 +40,5 @@ vim.diagnostic.config({
 })
 
 vim.opt.clipboard = "unnamedplus"
+
+vim.g.netrw_sizestyle = "h"
