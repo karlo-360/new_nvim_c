@@ -30,6 +30,7 @@ return {
                 "yaml",
                 "go",
                 "kotlin",
+                "ts_ls"
             },
         })
     end
